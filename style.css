@@ -1,0 +1,39 @@
+body {
+    box-sizing: border-box;
+    background-color: #605f5f;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1220px;   
+    padding: 5px;
+    background-color: #ddd;
+    margin: auto; 
+    margin-top: 90px;
+    box-shadow: 0 0 15px #000000;
+}
+.slide-in {
+    opacity: 0;   
+    transition: all 1s;
+    margin: 10px;
+    width: 50%;
+}
+.slide-left {   
+    float: left;   
+    transform: translateX(-50%) scale(0.95);    
+}
+.slide-right {   
+    float: right;  
+    transform: translateX(50%);        
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);   
+    transition: all 2s;
+}
+
